@@ -28,22 +28,22 @@
 4. 完整options配置对象
 ```json
 { 
-    initialSlide: 0, 
-    speed: 300, 
-    autoplayDuration: 3000, 
-    pagination: {
-        el: null, 
-        triggerEvent: 'click' 
+    "initialSlide": 0, 
+    "speed": 300, 
+    "autoplayDuration": 3000, 
+    "pagination": {
+        "el": null, 
+        "triggerEvent": "click" 
     },
-    navigation: {
-        nextEl: null,
-        prevEl: null,
-        hide: true
+    "navigation": {
+        "nextEl": null,
+        "prevEl": null,
+        "hide": true
     },
-    on: {
-        init: function(examp){}，
-        beforAnimation: function(examp){},
-        afterAmimation: function(examp){}
+    "on": {
+        "init": function(examp){},
+        "beforAnimation": function(examp){},
+        "afterAmimation": function(examp){}
     }
 }
 ```
