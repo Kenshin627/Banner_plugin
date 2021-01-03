@@ -1,0 +1,54 @@
+.container,.wrapper,.wrapper .slider,.wrapper .slider img{
+    width: 1226px;
+    height: 460px;
+}
+.container{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.slider.active{
+    opacity: 100;
+}
+.prev,.next{
+    cursor: pointer;
+    font-size: 50px;
+    color:rgb(23, 58, 97);
+    font-weight: 300;
+}
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+.next{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}    
+.pagination{
+    position: absolute;
+    left: 40%;
+    bottom: 20px;
+} 
+.dot{
+    display: inline-block;
+    margin: 0 4px;
+	width: 6px;
+	height: 6px;
+	background: rgba(0, 0, 0, .4);
+	border: 2px solid rgba(255, 255, 255, .4);
+	border-radius: 50%;
+	cursor: pointer;
+}
+.selected{
+    background: rgba(255, 255, 255, .4);
+	border-color: rgba(0, 0, 0, .4);
+}
