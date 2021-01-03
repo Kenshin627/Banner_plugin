@@ -1,8 +1,12 @@
-轮播图插件
-API文档如下：
-1.selector：轮播图容器，支持css选择器和直接DOM元素
+# 轮播图插件
+## 配置项参数说明如下
 
-2.options配置项：
+1. 调用说明
+   new Banner(selector[,options])
+
+2. selector：轮播图容器，支持css选择器和直接DOM元素
+
+3. options配置项：
 
 initialSlide: 0, //初始展示图片索引，默认值0
 speed: 300, //动画播放速度，默认值300
