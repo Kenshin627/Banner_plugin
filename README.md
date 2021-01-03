@@ -25,8 +25,8 @@
     | on.beforAnimation       | 每次切换图片执行动画前执行的钩子函数      |   空函数    |   x   |
     | on.afterAnimation        | 每次切换图片执行动画后执行的钩子函数      |   空函数    |   x   |
 
-
-`
+4. 完整options配置对象
+```json
 { 
     initialSlide: 0, 
     speed: 300, 
@@ -41,7 +41,9 @@
         hide: true
     },
     on: {
-        init: function(examp){}
+        init: function(examp){}，
+        beforAnimation: function(examp){},
+        afterAmimation: function(examp){}
     }
 }
-`
+```
