@@ -21,9 +21,9 @@
     | navigation.nextEl        | 下一张播放按钮选择器      |   null    |   x   |
     | navigation.prevEl        | 上一张播放按钮选择器      |   null    |   x   |
     | navigation.hide        | 是否默认隐藏，移入容器后显示      |   true    |   x   |
-    | on.init        | 轮播图初始化完毕后执行的钩子函数      |   空函数    |   x   |
-    | on.beforAnimation       | 每次切换图片执行动画前执行的钩子函数      |   空函数    |   x   |
-    | on.afterAnimation        | 每次切换图片执行动画后执行的钩子函数      |   空函数    |   x   |
+    | on.init        | 轮播图初始化完毕后执行的钩子函数      |   null    |   x   |
+    | on.beforAnimation       | 每次切换图片执行动画前执行的钩子函数      |   null    |   x   |
+    | on.afterAnimation        | 每次切换图片执行动画后执行的钩子函数      |   null    |   x   |
 
 4. 完整options配置对象
 ```json
@@ -41,9 +41,9 @@
         "hide": true
     },
     "on": {
-        "init": function(examp){},
-        "beforAnimation": function(examp){},
-        "afterAmimation": function(examp){}
+        "init": null,
+        "beforAnimation": null,
+        "afterAmimation": null
     }
 }
 ```
