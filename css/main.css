@@ -35,8 +35,8 @@
 }    
 .pagination{
     position: absolute;
-    left: 40%;
-    bottom: 20px;
+    right: 3%;
+    bottom: 3%;
 } 
 .dot{
     display: inline-block;

@@ -23,6 +23,7 @@
             if(this.hasNavigation){
                 this.navigationEvent();
             }
+            this.on && this.on.init && this.on.init.call(this,this)
         }
         //params
         params(selector,options) {
@@ -40,7 +41,9 @@
                     hide: true //默认隐藏，移入容器后显式
                 },
                 on: {
-                    init: function(examp){}
+                    init: function(examp){},
+                    beforAnimation: function(){},
+                    afterAnimation: function(){}
                 }
             };
             if(!selector){
@@ -120,15 +123,16 @@
                 }
                 slide.style.transition = `opacity 0ms`
             })
+            this.on && this.on.beforAnimation && this.on.beforAnimation.call(this,this)
             this.slideList[this.activeIndex].style.opacity = 1;
             this.slideList[this.activeIndex].addEventListener('transitionend',() => {
-                //钩子函数，动画执行完毕后，用户自定义传入的方法
-                this.init && this.init();
                 [].forEach.call(this.slideList,(slide,index) => {
                     if(index !== this.activeIndex){
                         slide.style.opacity = 0
                     }
                 })
+                //钩子函数，动画执行完毕后，用户自定义传入的方法
+                this.on && this.on.afterAnimation && this.on.afterAnimation.call(this,this)
             })
             if(this.hasPagination) {
                 this.paginationDotToggle();
