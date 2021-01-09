@@ -1,7 +1,7 @@
 # 轮播图插件
 ## 配置项参数说明如下
 
-1. 调用说明
+1. 插件调用说明
    new Banner(selector[,options])
 
 2. selector：轮播图容器选择器，支持传入css选择器或DOM元素，必填。
